@@ -1,0 +1,118 @@
+{
+  "description": "Academic Web 示例数据 - Joan Chen (贞德) 的学术空间",
+  "version": "1.0.0",
+  
+  "users": {
+    "admin": {
+      "id": "admin",
+      "username": "admin",
+      "displayName": "Administrator",
+      "email": "admin@academic-hub.local",
+      "password": "123456",
+      "role": "admin",
+      "institution": "Joan Academic Hub"
+    },
+    "joan": {
+      "id": "user-joan",
+      "username": "joan",
+      "displayName": "Joan Chen (贞德)",
+      "email": "joan@academic-hub.local",
+      "password": "11223344",
+      "role": "user",
+      "institution": "Fudan University",
+      "bio": "PhD candidate researching Graph Neural Networks and Financial AI."
+    }
+  },
+
+  "spaces": {
+    "joan": {
+      "username": "joan",
+      "displayName": "Joan Chen (贞德)",
+      "bio": "PhD candidate researching Graph Neural Networks and Financial AI.",
+      "institution": "Fudan University",
+      "theme": "light",
+      "modules": ["papers", "projects", "library", "chat"],
+      "social": {
+        "twitter": "",
+        "github": "",
+        "linkedin": ""
+      },
+      "stats": {
+        "papers": 3,
+        "projects": 2,
+        "libraries": 2
+      }
+    }
+  },
+
+  "papers": [
+    {
+      "id": "paper-joan-1",
+      "title": "Semi-Supervised Classification with Graph Convolutional Networks",
+      "authors": ["T.N. Kipf", "M. Welling"],
+      "year": 2017,
+      "venue": "ICLR 2017",
+      "abstract": "We present a scalable approach for semi-supervised learning on graph-structured data.",
+      "tags": ["GNN", "经典论文"],
+      "citations": 15000
+    },
+    {
+      "id": "paper-joan-2",
+      "title": "Graph Attention Networks",
+      "authors": ["P. Veličković", "G. Cucurull"],
+      "year": 2018,
+      "venue": "ICLR 2018",
+      "abstract": "We propose Graph Attention Networks (GATs), novel neural network architectures.",
+      "tags": ["GNN", "注意力机制"],
+      "citations": 8000
+    },
+    {
+      "id": "paper-joan-3",
+      "title": "Heterogeneous Graph Attention Network",
+      "authors": ["X. Wang", "H. Ji"],
+      "year": 2019,
+      "venue": "WWW 2019",
+      "abstract": "We propose the Heterogeneous Graph Attention Network (HAN).",
+      "tags": ["HGNN", "元路径"],
+      "citations": 3000
+    }
+  ],
+
+  "projects": [
+    {
+      "id": "project-joan-1",
+      "name": "HGNN 金融欺诈检测综述",
+      "description": "基于异质图神经网络的金融欺诈检测方法综述",
+      "status": "active",
+      "progress": 60,
+      "tags": ["综述", "HGNN", "金融欺诈"]
+    },
+    {
+      "id": "project-joan-2",
+      "name": "GNN 核心理论梳理",
+      "description": "系统梳理 GNN 核心理论",
+      "status": "completed",
+      "progress": 100,
+      "tags": ["学习", "GNN", "理论"]
+    }
+  ],
+
+  "libraries": [
+    {
+      "id": "lib-joan-1",
+      "name": "GNN 核心论文",
+      "description": "图神经网络经典论文",
+      "paperCount": 3,
+      "tags": ["GNN"],
+      "papers": ["paper-joan-1", "paper-joan-2", "paper-joan-3"]
+    },
+    {
+      "id": "lib-joan-2",
+      "name": "HGNN 研究",
+      "description": "异质图神经网络相关研究",
+      "paperCount": 1,
+      "tags": ["HGNN"],
+      "papers": ["paper-joan-3"]
+    }
+  ]
+}
